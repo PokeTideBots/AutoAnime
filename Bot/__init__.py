@@ -13,7 +13,7 @@ LOG.setLevel(level=logging.INFO)
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0',}
 
-API_ID = int(environ.get('API_ID', 45647)) #API ID
+API_ID = int(environ.get('API_ID', None)) #API ID
 API_HASH = environ.get('API_HASH', 'Your Api Id') #API HASH
 BOT_TOKEN = environ.get('BOT_TOKEN', 'Your Bot Token') #BOT TOKEN
 DATABASE_URL = environ.get('DATABASE_URL', 'Your MongoDb') #MONGO DB
